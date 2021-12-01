@@ -50,7 +50,7 @@ class Media_class extends Base_tools_class {
 		if (data.length > 0) {
 			for (var i in data) {
 				html += '<div class="item">';
-				html += '	<img class="displayBlock pointer" alt="" src="' + data[i].previewURL + '" data-url="' + data[i].webformatURL + '" />';
+				html += '	<img class="displayBlock pointer" alt="" src="' + data[i].urls.thumb + '" data-url="' + data[i].urls.full + '" />';
 				html += '</div>';
 			}
 			//fix for last line
