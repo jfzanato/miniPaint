@@ -113,7 +113,7 @@ class Media_class extends Base_tools_class {
 				if (params.query == '')
 					return;
 
-				var URL = "https://api.unsplash.com/search/photos?client_id=" + key
+				var URL = "https://api.unsplash.com/search/photos?client_id=6lY95OVVFb_GpU6fuYCz5aLDhf3wVYDWyhUEsVnIWqk"
 					+ "&page=" + _this.page
 					+ "&per_page=" + _this.per_page
 					+ "&safesearch=" + safe_search
