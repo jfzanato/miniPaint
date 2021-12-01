@@ -113,11 +113,11 @@ class Media_class extends Base_tools_class {
 				if (params.query == '')
 					return;
 
-				var URL = "https://pixabay.com/api/?key=" + key
+				var URL = "https://api.unsplash.com/search/photos?client_id=" + key
 					+ "&page=" + _this.page
 					+ "&per_page=" + _this.per_page
 					+ "&safesearch=" + safe_search
-					+ "&q="	+ encodeURIComponent(params.query);
+					+ "&query="	+ encodeURIComponent(params.query);
 
 				if (_this.cache[URL] != undefined) {
 					//using cache
